@@ -5,6 +5,9 @@ class Joinhive < Formula
   sha256 "8dbc80e7455fd78bf56adb82b9fa2d0205915974362139bc5881fb77d90ac051"
   license "MIT"
 
+  # Apache Hive (the Hadoop warehouse) also installs a `hive` binary.
+  conflicts_with "hive", because: "both install a `hive` binary"
+
   depends_on "node"
 
   def install
