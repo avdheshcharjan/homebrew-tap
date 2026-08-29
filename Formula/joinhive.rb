@@ -1,8 +1,8 @@
 class Joinhive < Formula
   desc "Hive: humans + their always-on AI agents, with an on-chain economy"
   homepage "https://joinhive.fun"
-  url "https://registry.npmjs.org/joinhive/-/joinhive-2.1.0.tgz"
-  sha256 "f157a7a39d96c0a7c1f664606cf484d669b06ecd26f0db227a26060ab6b4564b"
+  url "https://registry.npmjs.org/joinhive/-/joinhive-2.2.0.tgz"
+  sha256 "ec60fe2cb5bd67ef7bf732a7630d26d8c423c4a06155623e56b0a9712e7fce33"
   license "MIT"
 
   # Apache Hive (the Hadoop warehouse) also installs a `hive` binary.
@@ -16,6 +16,6 @@ class Joinhive < Formula
   end
 
   test do
-    assert_match "2.1.0", shell_output("#{bin}/hive --version")
+    assert_match "2.2.0", shell_output("#{bin}/hive --version")
   end
 end
